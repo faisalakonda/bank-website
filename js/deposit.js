@@ -8,6 +8,8 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
     // Step-3: get the current deposit total 
     // for non-input(element other than input, textarea) use innerText to get the text
     const depositTotalElement = document.getElementById('deposit-total');
+    // input field hole Value hobe 
+    // input field noy tai innerText hobe 
     const previousDepositTotalString = depositTotalElement.innerText;
     // Step-4: Convert string to number
     const previousDepositTotal = parseFloat(previousDepositTotalString);
@@ -25,10 +27,3 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
     depositField.value = '';
 })
 
-// Step-1: Add the event listener to the Withdraw button
-document.getElementById('btn-withdraw').addEventListener('click',function(){
-    // Step-2: get the withdraw button from the withdraw input field
-    const withdrawField = document.getElementById('withdraw-field');
-    const withdrawAmount = withdrawField.value;
-    console.log(withdrawAmount);
-})
